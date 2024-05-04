@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,8 @@
 		521DF69C2BE42CBD008DDF03 /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF69B2BE42CBD008DDF03 /* CatFact.swift */; };
 		521DF6A02BE42F4E008DDF03 /* CatFactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF69F2BE42F4E008DDF03 /* CatFactCell.swift */; };
 		521DF6A22BE4306D008DDF03 /* CatFactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF6A12BE4306D008DDF03 /* CatFactCellViewModel.swift */; };
-		52C0EE792BE4489100DA17F6 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 52C0EE782BE4489100DA17F6 /* Networking */; };
+		52269DCB2BE6553B00F21370 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 52269DCA2BE6553B00F21370 /* Network */; };
 		52C0EE7C2BE4630200DA17F6 /* MainScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C0EE7B2BE4630200DA17F6 /* MainScreenExtension.swift */; };
-		52C0EE7F2BE465DD00DA17F6 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 52C0EE7E2BE465DD00DA17F6 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C0EE7F2BE465DD00DA17F6 /* Networking in Frameworks */,
-				52C0EE792BE4489100DA17F6 /* Networking in Frameworks */,
+				52269DCB2BE6553B00F21370 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +191,7 @@
 			);
 			name = lecture23;
 			packageProductDependencies = (
-				52C0EE782BE4489100DA17F6 /* Networking */,
-				52C0EE7E2BE465DD00DA17F6 /* Networking */,
+				52269DCA2BE6553B00F21370 /* Network */,
 			);
 			productName = lecture23;
 			productReference = 521DF6742BE428B6008DDF03 /* lecture23.app */;
@@ -225,7 +222,7 @@
 			);
 			mainGroup = 521DF66B2BE428B6008DDF03;
 			packageReferences = (
-				52C0EE7D2BE465DD00DA17F6 /* XCLocalSwiftPackageReference "../content/Networking" */,
+				52269DC92BE6553A00F21370 /* XCRemoteSwiftPackageReference "Networkings" */,
 			);
 			productRefGroup = 521DF6752BE428B6008DDF03 /* Products */;
 			projectDirPath = "";
@@ -473,21 +470,22 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		52C0EE7D2BE465DD00DA17F6 /* XCLocalSwiftPackageReference "../content/Networking" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../content/Networking;
+/* Begin XCRemoteSwiftPackageReference section */
+		52269DC92BE6553A00F21370 /* XCRemoteSwiftPackageReference "Networkings" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Sandrokupatadzee/Networkings";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		52C0EE782BE4489100DA17F6 /* Networking */ = {
+		52269DCA2BE6553B00F21370 /* Network */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
-		};
-		52C0EE7E2BE465DD00DA17F6 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
+			package = 52269DC92BE6553A00F21370 /* XCRemoteSwiftPackageReference "Networkings" */;
+			productName = Network;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Networking
+import Network
 
 class MainScreen: UIViewController {
 
